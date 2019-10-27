@@ -14,3 +14,10 @@ schema is like below:
 | 6 | 0600031 | 北海道 | 札幌市　中央区 | 北一条東 | Hokkaido | Sapporo Shi Chuo Ku | Kita1-Johigashi |
 
 [郵便局のサイトからダウンロードできるローマ字の住所一覧 csv](https://www.post.japanpost.jp/zipcode/dl/roman-zip.html) を初期起動時にロードする MySQL の Dockerfile です。
+
+Run: 
+
+```sh
+$ docker pull ytabuchi/jp-address-db
+$ docker run --name mysql --rm -d --network mysql-network -p 43306:3306 ytabuchi/jp-address-db
+```

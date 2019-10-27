@@ -6,7 +6,7 @@ SET AUTOCOMMIT=0;
 DROP TABLE IF EXISTS `city`;
 CREATE TABLE `jpaddress`.`city` (
   `ID` INT(7) NOT NULL,
-  `Zip` INT(7) NOT NULL,
+  `Zip` VARCHAR(7) NOT NULL,
   `JP-Prefecture` VARCHAR(20) NULL,
   `JP-City` VARCHAR(50) NULL,
   `JP-Address` VARCHAR(100) NULL,
